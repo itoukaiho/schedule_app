@@ -34,7 +34,7 @@
         <td><%= task.updated_at %></td>
         <td><%= link_to"詳細",task%></td>
         <td><%= link_to "編集", [:edit,task] %></td>
-        <td><%= button_to "削除", task, method: :delete, data: { confirm: "本当に削除しますか？" } %></td>
+        <td><%= button_to "削除", task,:method => :delete, data: { confirm: "本当に削除しますか？"} %></td>
       </tr>
     <% end %>
   </tbody>
